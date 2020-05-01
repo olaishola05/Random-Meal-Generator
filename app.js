@@ -3,7 +3,9 @@ const mealBtn = document.getElementById("mealBtn");
 function getRecipe() {
     axios
         .get("https://www.themealdb.com/api/json/v1/1/random.php")
+        .then((res) => res)
         .then((res) => {
+            console.log(res);
             showOutput(res);
         })
         .catch((err) => {
@@ -12,9 +14,10 @@ function getRecipe() {
 }
 
 function showOutput(res) {
+    let recipe = JSON.stringify(res);
     document.getElementById("result").innerHTML = `
     <div class="card card-body mb-4 mt-3">
-    <pre>Recipe:${JSON.stringify(res.strMeal, null, 2)}</pre>
+    <pre>Recipe:${recipe}</pre>
     </div>
     
     `;
