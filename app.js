@@ -5,21 +5,35 @@ function getRecipe() {
         .get("https://www.themealdb.com/api/json/v1/1/random.php")
         .then((res) => res)
         .then((res) => {
-            console.log(res);
-            showOutput(res);
+            let recipe = res.data.meals[0];
+            console.log(recipe);
+            showOutput(res.data.meals[0]);
         })
         .catch((err) => {
             console.error(err);
         });
 }
 
-function showOutput(res) {
-    let recipe = JSON.stringify(res);
+function showOutput(recipe) {
+    // console.log(recipe);
     document.getElementById("result").innerHTML = `
+    <div class = "container">
     <div class="card card-body mb-4 mt-3">
-    <pre>Recipe:${recipe}</pre>
+    <h3>Recipe: ${recipe.strMeal}</h3>
+    <pre>Country: ${recipe.strArea}</pre>
+    </div>
+    <div class = "card" id = "img-container">
+    <img src = ${recipe.strMealThumb} id = "dish" alt = "image of a recipe>
+    
+    <div class="mt-3 text-center" id="instruction">
+   
+    ${recipe.strInstructions}
+    </div>
     </div>
     
+    
+    </div>
+    </div>
     `;
 }
 

@@ -2,3 +2,20 @@
     margin: 0 auto;
     margin-top: 10%;
 }
+
+#img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#dish {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+#instruction {
+    width: 20%;
+    height: 300px;
+    margin-top: 10px;
+}
