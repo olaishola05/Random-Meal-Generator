@@ -4,18 +4,29 @@
 }
 
 #img-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
+    /* border: 1px teal solid; */
+    padding: 10px;
 }
-#dish {
-    width: 40%;
+/* #dish {
+    width: 50%;
     margin-bottom: 10px;
-}
+    height: 400px;
+    border: 1px teal solid;
+} */
 
 #instruction {
-    width: 20%;
+    width: 50%;
     height: 300px;
     margin-top: 10px;
+    /* border: 1px teal solid; */
+    padding: 20px;
+}
+
+#text {
+    text-align: left;
 }
