@@ -2,7 +2,9 @@ const mealBtn = document.getElementById("mealBtn");
 
 function getRecipe() {
     axios
-        .get("https://www.themealdb.com/api/json/v1/1/random.php")
+        .get(
+            "https://www.themealdb.com/api/json/v1/1/random.php"
+        )
         .then((res) => res)
         .then((res) => {
             let recipe = res.data.meals[0];
@@ -25,50 +27,65 @@ function showOutput(recipe) {
         }
     }
     document.getElementById("result").innerHTML = `
-    <div class = "container">
-    <div class=" mb-4 mt-3">
+    <div class="container main">
+    
+    <div class="mb-2 mt-3 border">
     <h3 class="text-center">Recipe: ${recipe.strMeal}</h3>
-    <ul class = "center">
+    <ul class="recipe-info">
     <li>Country: ${recipe.strArea}</li>
     <li>Tag: ${recipe.strTags}</li>
     <li>Category: ${recipe.strCategory}</li>
     </ul>
     </div>
 
-    <div id = "img-container">
+    <div id="img-container">
 
-    <div id = "dish">
-    <img src = ${recipe.strMealThumb} alt = "image of a recipe>
+    <div id="dish_image">
+    <img src = ${
+        recipe.strMealThumb
+    } class='img-fluid' alt = "image of a recipe />
     </div>
+
 
     <div class="instruction">
-    <h2 class = "text-center">Instruction</h2>
-    <p id="text">
-    ${recipe.strInstructions}</p>
+    <h2>Instruction</h2>
+    <p id="text" class="howto">
+    ${recipe.strInstructions.substr(0, 400)}...</p>
     </div>
 
     </div>
+
     <hr>
 
-    <div class = "media">
-    <div class="">
+    <div class = "ingredient-container">
+    <div class = "ingredient">
     <h5>Ingredients:</h5>
     <ul>
-    ${ingredients.map((ingredient) => `<li>${ingredient}</li>`).join("")}
+    ${ingredients
+        .map((ingredient) => `<li>${ingredient}</li>`)
+        .join("")}
     </ul>
     </div>
-   
-    <div class="video">
-    <h5>Recipe Video</h5>
-    <iframe src = "https://www.youtube.com/embed/${recipe.strYoutube.slice(-11)}" width = "500" height = "420"></iframe>
+
+    <div class = "video">
+   <h5>Recipe Video</h5>
+    <iframe src = "https://www.youtube.com/embed/${recipe.strYoutube.slice(
+        -11
+    )}" width = "500"height = "250"></iframe>
     </div>
+
 
     </div>
     
     
     
+    
+    
+    
     </div>
-    </div>
+    
+    
+    
     `;
 }
 
@@ -76,7 +93,9 @@ function showOutput(recipe) {
 
 axios.interceptors.request.use(
     (config) => {
-        console.log(`${config.method.toUpperCase()} request sent to ${config.url} at
+        console.log(`${config.method.toUpperCase()} request sent to ${
+            config.url
+        } at
     ${new Date().getTime()}`);
 
         return config;
