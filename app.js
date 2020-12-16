@@ -27,9 +27,9 @@ function showOutput(recipe) {
         }
     }
     document.getElementById("result").innerHTML = `
-    <div class="container main">
+    <div class="container main"> 
     
-    <div class="mb-2 mt-3 border">
+    <div class="mb-2 mt-3 border recipe-container">
     <h3 class="text-center">Recipe: ${recipe.strMeal}</h3>
     <ul class="recipe-info">
     <li>Country: ${recipe.strArea}</li>
@@ -38,26 +38,26 @@ function showOutput(recipe) {
     </ul>
     </div>
 
-    <div id="img-container">
-
-    <div id="dish_image">
+    <div class="img-container">
+   
     <img src = ${
         recipe.strMealThumb
-    } class='img-fluid' alt = "image of a recipe />
-    </div>
-
+    } class='img-fluid img-thumbnail' alt = "image of a recipe />
+    
 
     <div class="instruction">
-    <h2>Instruction</h2>
-    <p id="text" class="howto">
-    ${recipe.strInstructions.substr(0, 400)}...</p>
+    <p id="text" class="howto border">
+    ${recipe.strInstructions.substr(0, 300)}</p>
+    </div>
     </div>
 
+
+    
     </div>
+    `;
 
-    <hr>
-
-    <div class = "ingredient-container">
+    document.getElementById("vid-content").innerHTML = `
+<div class = "ingredient-container mt-4"> 
     <div class = "ingredient">
     <h5>Ingredients:</h5>
     <ul>
@@ -73,20 +73,9 @@ function showOutput(recipe) {
         -11
     )}" width = "500"height = "250"></iframe>
     </div>
-
-
     </div>
     
-    
-    
-    
-    
-    
-    </div>
-    
-    
-    
-    `;
+`;
 }
 
 // logging

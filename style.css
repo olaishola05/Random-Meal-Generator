@@ -1,58 +1,86 @@
+#result {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+}
 .main {
-    border: 1px solid blue;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+
+    margin-bottom: 10px;
 }
 
-#img-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.recipe-info {
+    display: inline-flex;
+}
+
+.recipe-info li {
+    list-style-type: none;
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+}
+
+.recipe-container {
+    width: 80%;
+    margin: 0 auto;
     padding: 10px;
-    border: red 1px solid;
+}
+
+.img-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 img {
-    width: 30%;
+    width: 300px;
     height: 200px;
     margin-top: 10px;
-    border: teal 1px solid;
+    border: 1px solid black;
 }
 
-.ingredient-container {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.ingredient {
-    width: 100%;
-}
-
-.video {
-    width: 100%;
+.instruction {
+    border: 1px solid teal;
 }
 
 .howto {
-    width: 40%;
-    border: 1px solid gray;
-    padding: 25px;
+    width: 800px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
 }
 
 .howto p {
     text-align: justify;
 }
 
-.recipe.info {
+.ingredient-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
 }
 
-.recipe.info li {
-    list-style-type: none;
-    font-size: 200px;
+.ingredient {
+    width: 50%;
+    border: 1px solid blue;
 }
 
-.instruction {
-    border: 1px solid teal;
+.video {
+    width: 50%;
 }
