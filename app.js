@@ -29,7 +29,7 @@ function showOutput(recipe) {
     document.getElementById("result").innerHTML = `
     <div class="container main"> 
     
-    <div class="mb-2 mt-3 border recipe-container">
+    <div class="mb-2 mt-2 border recipe-container">
     <h3 class="text-center">Recipe: ${recipe.strMeal}</h3>
     <ul class="recipe-info">
     <li>Country: ${recipe.strArea}</li>
@@ -46,6 +46,7 @@ function showOutput(recipe) {
     
 
     <div class="instruction">
+   
     <p id="text" class="howto border">
     ${recipe.strInstructions.substr(0, 300)}</p>
     </div>
@@ -67,8 +68,9 @@ function showOutput(recipe) {
     </ul>
     </div>
 
-    <div class = "video">
+    <div class = "video ">
    <h5>Recipe Video</h5>
+   <p class='lead'>If you prefer watching how it is done, watch video below</p>
     <iframe src = "https://www.youtube.com/embed/${recipe.strYoutube.slice(
         -11
     )}" width = "500"height = "250"></iframe>
