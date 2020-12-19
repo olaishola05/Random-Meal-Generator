@@ -82,7 +82,6 @@ img {
 
 .ingredient {
     width: 40%;
-    border: 1px solid blue;
     padding: 15px;
 }
 
@@ -94,4 +93,10 @@ img {
 
 .video {
     width: 50%;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .recipe-info {
+        display: flex;
+        flex-direction: column;
+    }
 }

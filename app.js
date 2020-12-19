@@ -26,6 +26,29 @@ function showOutput(recipe) {
             break;
         }
     }
+
+    let instruction, moreInfo, lessInfo;
+    function readLess() {
+        instruction = recipe.strInstructions;
+        // if (instruction.length > 300) {
+        //     lessInfo = document.getElementById(
+        //         "text"
+        //     ).innerHTML = instruction.substring(0, 300);
+        // }
+
+        return instruction;
+    }
+
+    function readMore() {
+        instruction = recipe.strInstructions;
+        if (instruction.length === 300) {
+            moreInfo = document.getElementById(
+                "text"
+            ).innerHTML = instruction;
+        }
+
+        return instruction;
+    }
     document.getElementById("result").innerHTML = `
     <div class="container main"> 
     
@@ -48,7 +71,12 @@ function showOutput(recipe) {
     <div class="instruction">
    
     <p id="text" class="howto border">
-    ${recipe.strInstructions.substr(0, 300)}</p>
+    ${recipe.strInstructions.substring(0, 300)}
+    <button class='btn btn-primary'>
+    ReadMore
+    </button>
+    </p>
+   
     </div>
     </div>
 
@@ -59,7 +87,7 @@ function showOutput(recipe) {
 
     document.getElementById("vid-content").innerHTML = `
 <div class = "ingredient-container mt-4"> 
-    <div class = "ingredient">
+    <div class = "ingredient border">
     <h5>Ingredients:</h5>
     <ul>
     ${ingredients
