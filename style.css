@@ -51,11 +51,6 @@ img {
     width: 300px;
     height: 200px;
     margin-top: 10px;
-    border: 1px solid black;
-}
-
-.instruction {
-    border: 1px solid teal;
 }
 
 .howto {
@@ -98,5 +93,26 @@ img {
     .recipe-info {
         display: flex;
         flex-direction: column;
+    }
+
+    .recipe-container > h3 {
+        font-size: 15px;
+    }
+
+    .recipe-info li {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .img-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .howto {
+        width: 250px;
+        /* height: 500px; */
+        margin-top: 10px;
+        padding: 10px;
     }
 }
