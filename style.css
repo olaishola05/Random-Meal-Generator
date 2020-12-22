@@ -89,6 +89,10 @@ img {
 .video {
     width: 50%;
 }
+
+#more {
+    display: none;
+}
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     .recipe-info {
         display: flex;

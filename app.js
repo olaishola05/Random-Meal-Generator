@@ -27,28 +27,45 @@ function showOutput(recipe) {
         }
     }
 
-    let instruction, moreInfo, lessInfo;
-    function readLess() {
-        instruction = recipe.strInstructions;
-        // if (instruction.length > 300) {
-        //     lessInfo = document.getElementById(
-        //         "text"
-        //     ).innerHTML = instruction.substring(0, 300);
-        // }
+    // let instruction, moreInfo, lessInfo;
+    // function readLess() {
+    //     instruction = recipe.strInstructions;
+    //     // if (instruction.length > 300) {
+    //     //     lessInfo = document.getElementById(
+    //     //         "text"
+    //     //     ).innerHTML = instruction.substring(0, 300);
+    //     // }
 
-        return instruction;
-    }
+    //     return instruction;
+    // }
 
-    function readMore() {
-        instruction = recipe.strInstructions;
-        if (instruction.length === 300) {
-            moreInfo = document.getElementById(
-                "text"
-            ).innerHTML = instruction;
+    // function readMore() {
+    //     instruction = recipe.strInstructions;
+    //     if (instruction.length === 300) {
+    //         moreInfo = document.getElementById(
+    //             "text"
+    //         ).innerHTML = instruction;
+    //     }
+
+    //     return instruction;
+    // }
+
+    function toggleText() {
+        let dots = document.getElementById("dots");
+        let moreInfo = document.getElementById("more");
+        let btnInfo = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnInfo.innerHTML = "Read More";
+            moreInfo.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnInfo.innerHTML = "Read less";
+            moreInfo.style.display = "inline";
         }
-
-        return instruction;
     }
+
     document.getElementById("result").innerHTML = `
     <div class="container main"> 
     
@@ -71,13 +88,22 @@ function showOutput(recipe) {
     <div class="instruction">
    
     <p id="text" class="howto border">
-    ${recipe.strInstructions.substring(0, 300)}
-    <button class='btn btn-primary'>
+    ${
+        recipe.strInstructions
+    } <span id='dots'>...</span> <span id='more'>${
+        recipe.strInstructions
+    }</span>
+
+     
+    </p>
+
+    </div>
+    <div>
+        <button class="btn btn-success" id="myBtn" ${(onclick = () =>
+            toggleText())}>
     ReadMore
     </button>
-    </p>
-   
-    </div>
+</div>
     </div>
 
 
