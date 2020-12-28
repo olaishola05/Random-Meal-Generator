@@ -27,7 +27,7 @@
 .recipe-info li {
     list-style-type: none;
     font-size: 16px;
-    margin: 10px;
+    margin: 5px;
     text-align: center;
 }
 
@@ -49,20 +49,28 @@
 
 img {
     width: 300px;
-    height: 200px;
+    height: 300px;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
 .howto {
-    width: 800px;
-    height: 300px;
+    width: 100%;
     margin-top: 10px;
-    margin-left: 20px;
     padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
 }
 
 .howto p {
     text-align: justify;
+    line-height: 1.5;
+}
+
+#myBtn {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .ingredient-container {
@@ -82,8 +90,8 @@ img {
 
 .ingredient ul {
     display: grid;
-    list-style-type: none;
-    padding: 2px;
+    list-style-type: circle;
+    padding: 10px;
 }
 
 .video {
@@ -93,10 +101,13 @@ img {
 #more {
     display: none;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 360px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .main {
+        width: 100%;
+    }
     .recipe-info {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .recipe-container > h3 {
@@ -112,11 +123,35 @@ img {
         display: flex;
         flex-direction: column;
     }
+    img {
+        width: 100%;
+    }
 
     .howto {
         width: 250px;
-        /* height: 500px; */
         margin-top: 10px;
         padding: 10px;
+    }
+
+    #vid-content {
+        width: 100%;
+    }
+    .ingredient-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .vid-tag {
+        width: 350px;
+        font-size: 15px;
+    }
+
+    iframe {
+        width: 340px;
+        margin: 0 auto;
+    }
+
+    .ingredient {
+        width: 100%;
     }
 }

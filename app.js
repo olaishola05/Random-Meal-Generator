@@ -1,4 +1,5 @@
 const mealBtn = document.getElementById("mealBtn");
+const toggleBtn = document.getElementById("myBtn");
 
 function getRecipe() {
     axios
@@ -80,31 +81,30 @@ function showOutput(recipe) {
 
     <div class="img-container">
    
-    <img src = ${
-        recipe.strMealThumb
-    } class='img-fluid img-thumbnail' alt = "image of a recipe />
+    <img src = ${recipe.strMealThumb} alt = "image of a recipe />
     
 
     <div class="instruction">
    
     <p id="text" class="howto border">
-    ${
-        recipe.strInstructions
-    } <span id='dots'>...</span> <span id='more'>${
+    ${recipe.strInstructions.substr(
+        0,
+        300
+    )} <span id='dots'>...</span> <span id='more'>${
         recipe.strInstructions
     }</span>
-
-     
     </p>
+    </div>
 
-    </div>
     <div>
-        <button class="btn btn-success" id="myBtn" ${(onclick = () =>
-            toggleText())}>
-    ReadMore
+        <button class="btn btn-success" id="myBtn" onclick = '${(onclick = () =>
+            toggleText())}'>
+            ReadMore
     </button>
-</div>
     </div>
+    
+</div>
+    
 
 
     
@@ -124,7 +124,7 @@ function showOutput(recipe) {
 
     <div class = "video ">
    <h5>Recipe Video</h5>
-   <p class='lead'>If you prefer watching how it is done, watch video below</p>
+   <p class='lead vid-tag'>If you prefer watching how it is done, watch video below</p>
     <iframe src = "https://www.youtube.com/embed/${recipe.strYoutube.slice(
         -11
     )}" width = "500"height = "250"></iframe>
@@ -151,3 +151,6 @@ axios.interceptors.request.use(
 );
 
 mealBtn.addEventListener("click", getRecipe);
+// toggleBtn.addEventListener("click", () => {
+//     toggleText;
+// });
