@@ -102,6 +102,69 @@ img {
 #more {
     display: none;
 }
+
+/* iphone 5 */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .main {
+        width: 100%;
+    }
+    .recipe-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recipe-container > h3 {
+        font-size: 17px;
+    }
+
+    .recipe-info li {
+        font-size: 14px;
+        /* text-align: left; */
+    }
+
+    .img-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+    }
+
+    .howto {
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    #vid-content {
+        width: 100%;
+    }
+    .ingredient-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .vid-tag {
+        width: 350px;
+        font-size: 15px;
+    }
+
+    iframe {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .ingredient {
+        width: 100%;
+    }
+}
+
+/* iphone 6, 7, 8 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     .main {
         width: 100%;
@@ -157,6 +220,7 @@ img {
     }
 }
 
+/* Iphone 6/7/8 plus */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
     .main {
         width: 100%;
@@ -214,6 +278,7 @@ img {
     }
 }
 
+/* Iphone X */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
     .main {
         width: 100%;
@@ -272,7 +337,6 @@ img {
 }
 
 /* samsung */
-
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
     .main {
         width: 100%;
@@ -332,7 +396,6 @@ img {
 }
 
 /* Ipads */
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     .img-container {
         display: flex;
@@ -374,5 +437,26 @@ img {
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
     iframe {
         width: 895px;
+    }
+}
+
+/* surface duo */
+@media only screen and (min-device-width: 540px) and (max-device-width: 720px) and (-webkit-min-device-pixel-ratio: 2) {
+    .howto {
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .vid-tag {
+        width: 500px;
+        font-size: 18px;
+    }
+
+    iframe {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
