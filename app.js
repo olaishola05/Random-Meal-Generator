@@ -68,7 +68,7 @@ function showOutput(recipe) {
     }
 
     document.getElementById("result").innerHTML = `
-    <div class="container main"> 
+    <div class="main"> 
     
     <div class="mb-2 mt-2 border recipe-container">
     <h3 class="text-center">Recipe: ${recipe.strMeal}</h3>

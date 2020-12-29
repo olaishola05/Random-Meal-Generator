@@ -21,7 +21,7 @@
 }
 
 .recipe-info {
-    display: inline-flex;
+    display: flex;
 }
 
 .recipe-info li {
@@ -29,6 +29,7 @@
     font-size: 16px;
     margin: 5px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .recipe-container {
@@ -101,7 +102,7 @@ img {
 #more {
     display: none;
 }
-@media only screen and (min-device-width: 360px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     .main {
         width: 100%;
     }
@@ -147,11 +148,231 @@ img {
     }
 
     iframe {
+        width: 310px;
+        margin: 0 auto;
+    }
+
+    .ingredient {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .main {
+        width: 100%;
+    }
+    .recipe-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .recipe-container > h3 {
+        font-size: 15px;
+    }
+
+    .recipe-info li {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .img-container {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+    }
+
+    .howto {
+        width: 280px;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    #vid-content {
+        width: 100%;
+    }
+    .ingredient-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .vid-tag {
+        width: 350px;
+        font-size: 15px;
+    }
+
+    iframe {
         width: 340px;
         margin: 0 auto;
     }
 
     .ingredient {
         width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .main {
+        width: 100%;
+    }
+    .recipe-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .recipe-container > h3 {
+        font-size: 15px;
+    }
+
+    .recipe-info li {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .img-container {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+    }
+
+    .howto {
+        width: 240px;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    #vid-content {
+        width: 100%;
+    }
+    .ingredient-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .vid-tag {
+        width: 350px;
+        font-size: 15px;
+    }
+
+    iframe {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .ingredient {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* samsung */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .main {
+        width: 100%;
+    }
+    .recipe-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .recipe-container > h3 {
+        font-size: 16px;
+    }
+
+    .recipe-info li {
+        font-size: 14px;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .img-container {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+    }
+
+    .howto {
+        width: 240px;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    #vid-content {
+        width: 100%;
+    }
+    .ingredient-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .vid-tag {
+        width: 320px;
+        font-size: 15px;
+    }
+
+    iframe {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .ingredient {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Ipads */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .img-container {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+    }
+
+    .howto {
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .ingredient-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .vid-tag {
+        width: 500px;
+        font-size: 18px;
+    }
+
+    iframe {
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ingredient {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    iframe {
+        width: 895px;
     }
 }
