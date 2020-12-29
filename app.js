@@ -1,5 +1,4 @@
 const mealBtn = document.getElementById("mealBtn");
-const toggleBtn = document.getElementById("myBtn");
 
 function getRecipe() {
     axios
@@ -17,6 +16,22 @@ function getRecipe() {
         });
 }
 
+function toggleText() {
+    let dots = document.getElementById("dots");
+    let moreInfo = document.getElementById("more");
+    let btnInfo = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnInfo.innerHTML = "Read More";
+        moreInfo.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnInfo.innerHTML = "Read less";
+        moreInfo.style.display = "inline";
+    }
+}
+
 function showOutput(recipe) {
     let ingredients = [];
     for (let i = 1; i <= 20; i++) {
@@ -28,47 +43,8 @@ function showOutput(recipe) {
         }
     }
 
-    // let instruction, moreInfo, lessInfo;
-    // function readLess() {
-    //     instruction = recipe.strInstructions;
-    //     // if (instruction.length > 300) {
-    //     //     lessInfo = document.getElementById(
-    //     //         "text"
-    //     //     ).innerHTML = instruction.substring(0, 300);
-    //     // }
-
-    //     return instruction;
-    // }
-
-    // function readMore() {
-    //     instruction = recipe.strInstructions;
-    //     if (instruction.length === 300) {
-    //         moreInfo = document.getElementById(
-    //             "text"
-    //         ).innerHTML = instruction;
-    //     }
-
-    //     return instruction;
-    // }
-
-    function toggleText() {
-        let dots = document.getElementById("dots");
-        let moreInfo = document.getElementById("more");
-        let btnInfo = document.getElementById("myBtn");
-
-        if (dots.style.display === "none") {
-            dots.style.display = "inline";
-            btnInfo.innerHTML = "Read More";
-            moreInfo.style.display = "none";
-        } else {
-            dots.style.display = "none";
-            btnInfo.innerHTML = "Read less";
-            moreInfo.style.display = "inline";
-        }
-    }
-
     document.getElementById("result").innerHTML = `
-    <div class="main"> 
+    <div class="container main"> 
     
     <div class="mb-2 mt-2 border recipe-container">
     <h3 class="text-center">Recipe: ${recipe.strMeal}</h3>
@@ -104,10 +80,7 @@ function showOutput(recipe) {
     </div>
     
 </div>
-    
 
-
-    
     </div>
     `;
 
@@ -151,6 +124,4 @@ axios.interceptors.request.use(
 );
 
 mealBtn.addEventListener("click", getRecipe);
-// toggleBtn.addEventListener("click", () => {
-//     toggleText;
-// });
+// addEventListener("click", toggleText);
