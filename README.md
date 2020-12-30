@@ -80,7 +80,7 @@ Any contributions you make are **greatly appreciated**.
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-MIT © Ola Ishola.
+[MIT](https://choosealicense.com/licenses/mit/) © Ola Ishola.
 
 <!-- CONTACT -->
 ## Contact
