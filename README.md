@@ -10,12 +10,10 @@
 <ul>
     <li><a href="#motivation">Motivation</a></li>
 </ul>
-
 <ul>
     <li><a href="#built-with">Built With</a></li>
 </ul>
 </li>
-
 <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -26,14 +24,15 @@
 <li><a href="#contributing">Contributing</a></li>
 <li><a href="#license">License</a></li>
 <li><a href="#contact">Contact</a></li>
-
+<li><a href="#credits">Credits</a></li>
 </ol>
-
 </details>
 
 <!-- About the Project -->
 ## About The Project
 ![random-meal-generator screenshot](/img/meal-New.png)
+![random-meal-generator screenshot-2](/img/meal1.png)
+![random-meal-generator screenshot-3](/img/meal2.png)
 A recipe app that generates random meal at every click, including details about the meal such as Country of origin, instructions on how to cook it, a YouTube video showing the chef cooking the actual meal and etc.
 ### Motivation
 The motivation behind this project is to get into the habit of building projects using technologies, tools and concept learnt along my programming journey and to solidify concepts and build brain muscle memory.  
@@ -87,6 +86,4 @@ Ola Ishola - [@Orlaish](https://twitter.com/@Orlaish) - olaishola@hotmail.co.uk
 Project Link: [https://randomrecipegenerator.netlify.app/](https://randomrecipegenerator.netlify.app/)
 
 ## Credits
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project.
-
-Anything else that seems useful
+- **Florin Pop**: [Twitter](https://twitter.com/florinpop1705) - [YouTube Channel](https://youtube.com/florinpop) - [website](https://florin-pop.com).
