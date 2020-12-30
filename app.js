@@ -61,8 +61,8 @@ function showOutput(recipe) {
     
 
     <div class="instruction">
-   
     <p id="text" class="howto border">
+    <span class ="text-center"><b>Instruction:</b></span> <br/>
     ${recipe.strInstructions.substr(
         0,
         300

@@ -122,7 +122,6 @@ img {
 
     .recipe-info li {
         font-size: 14px;
-        /* text-align: left; */
     }
 
     .img-container {
@@ -192,7 +191,7 @@ img {
     }
 
     .howto {
-        width: 250px;
+        width: 300px;
         margin-top: 10px;
         padding: 10px;
     }
@@ -248,9 +247,9 @@ img {
     }
 
     .howto {
-        width: 280px;
+        width: 350px;
         padding: 10px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         margin-top: 10px;
     }
 
@@ -268,7 +267,7 @@ img {
     }
 
     iframe {
-        width: 340px;
+        width: 350px;
         margin: 0 auto;
     }
 
@@ -458,5 +457,21 @@ img {
         width: 480px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+/* Responsive */
+@media only screen and (min-device-width: 1147px) and (max-device-width: 1403px) {
+    .ingredient-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/* laptops */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .ingredient-container {
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
