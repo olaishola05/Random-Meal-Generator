@@ -33,7 +33,7 @@
 
 <!-- About the Project -->
 ## About The Project
-[![random-meal-generator screenshot] [/img/meal-New.png]](https://randomrecipegenerator.netlify.app/)
+![random-meal-generator screenshot](/img/meal-New.png)
 A recipe app that generates random meal at every click, including details about the meal such as Country of origin, instructions on how to cook it, a YouTube video showing the chef cooking the actual meal and etc.
 ### Motivation
 The motivation behind this project is to get into the habit of building projects using technologies, tools and concept learnt along my programming journey and to solidify concepts and build brain muscle memory.  
@@ -84,7 +84,7 @@ MIT © Ola Ishola.
 
 Ola Ishola - [@Orlaish](https://twitter.com/@Orlaish) - olaishola@hotmail.co.uk
 
-Project Link: [https://github.com/netman5/Random-Meal-Generator.git](https://randomrecipegenerator.netlify.app/)
+Project Link: [https://randomrecipegenerator.netlify.app/](https://randomrecipegenerator.netlify.app/)
 
 ## Credits
 Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project.
