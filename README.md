@@ -33,7 +33,7 @@
 
 <!-- About the Project -->
 ## About The Project
-[![random-meal-generator screenshot] [img/meal-New.png]](https://randomrecipegenerator.netlify.app/)
+[![random-meal-generator screenshot] [./img/meal-New.png]](https://randomrecipegenerator.netlify.app/)
 A recipe app that generates random meal at every click, including details about the meal such as Country of origin, instructions on how to cook it, a YouTube video showing the chef cooking the actual meal and etc.
 ### Motivation
 The motivation behind this project is to get into the habit of building projects using technologies, tools and concept learnt along my programming journey and to solidify concepts and build brain muscle memory.  
