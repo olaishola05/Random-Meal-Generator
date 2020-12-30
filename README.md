@@ -31,11 +31,11 @@
 <!-- About the Project -->
 ## About The Project
 ![random-meal-generator screenshot](/img/meal-New.png)
-<br/>
+
 ![random-meal-generator screenshot-2](/img/meal1.png)
 
-<br/>
 ![random-meal-generator screenshot-3](/img/meal2.png)
+
 A recipe app that generates random meal at every click, including details about the meal such as Country of origin, instructions on how to cook it, a YouTube video showing the chef cooking the actual meal and etc.
 
 ### Motivation
