@@ -33,7 +33,7 @@
 
 <!-- About the Project -->
 ## About The Project
-[!random-meal-generator screenshot [img/meal-New.png]](https://randomrecipegenerator.netlify.app/)
+[![random-meal-generator screenshot] [img/meal-New.png]](https://randomrecipegenerator.netlify.app/)
 A recipe app that generates random meal at every click, including details about the meal such as Country of origin, instructions on how to cook it, a YouTube video showing the chef cooking the actual meal and etc.
 ### Motivation
 The motivation behind this project is to get into the habit of building projects using technologies, tools and concept learnt along my programming journey and to solidify concepts and build brain muscle memory.  
@@ -43,8 +43,8 @@ The project was built with the following Tech/framework:
 * HTML, CSS and JavaScript
 * [Bootstrap](https://getbootstrap.com)
 * [Axios](https://github.com/axios/axios)
-* [TheMealDB API][https://www.themealdb.com/api.php]
-* [VSCode Liveserver EXt](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+* [TheMealDB API](https://www.themealdb.com/api.php)
+* [VSCode Liveserver Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -52,9 +52,11 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 * npm
 `npm install axios`
+
+* Install liveserver from VSCode extension
 ### Installation
 
-1. Checkout how the ThemealDB API data is structured and types of API calls [TheMealDB API][https://www.themealdb.com/api.php]. The API is free and include the test key in the url.
+1. Checkout how the ThemealDB API data is structured and types of API calls [TheMealDB API](https://www.themealdb.com/api.php). The API is free and include the test key in the url.
 2. Clone the repo
    `git clone https://github.com/netman5/Random-Meal-Generator.git`
 3. Run the App by clicking on the liverserver extension at the bottom right corner of VScode
@@ -80,7 +82,7 @@ MIT © Ola Ishola.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@Orlaish](https://twitter.com/@Orlaish) - olaishola@hotmail.co.uk
+Ola Ishola - [@Orlaish](https://twitter.com/@Orlaish) - olaishola@hotmail.co.uk
 
 Project Link: [https://github.com/netman5/Random-Meal-Generator.git](https://randomrecipegenerator.netlify.app/)
 
